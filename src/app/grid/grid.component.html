@@ -1,0 +1,22 @@
+<a href="#" id="new-button">New</a>
+<table class="table table-dark">
+<thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let Info of Data"> 
+        <td style="text-align: left">{{ Info.id  }}</td>
+        <td style="text-align: left">{{ Info.name }}</td>
+        <td>
+            <button class="btn-primary" href="#" (click)="editRecord(this)"> Edit</button>
+        </td>
+        <td>
+            <button class="btn-danger" href="#" (click)="deleteRecord(this)"> Delete</button>
+        </td>
+    </tr>
+</tbody>
+</table>

@@ -1,0 +1,13 @@
+<div>
+
+  <form>
+     
+    <div class="form-group">
+          <h1>Add New bank</h1>
+          <label for="name-input">Name</label>
+          <input type="text" id="name-input" [(ngModel)]="Info.name" [ngModelOptions]="{standalone: true}" class="form-control" />
+      </div>
+      <button type="button" class="btn btn-primary" (click)="addOrUpdateRecord($event);">Save</button>
+    
+  </form>
+ </div>
